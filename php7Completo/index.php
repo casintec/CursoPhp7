@@ -26,7 +26,18 @@ echo json_encode($busca);
 */
 
 //Carrega um usuário com login e senha (logado)
-$usuariologado = new Usuario();
+/*$usuariologado = new Usuario();
 $usuariologado->login("lev_wand", "root");
 echo $usuariologado;
+*/
+
+$aluno = new Usuario("aluno", "@@@lun0");
+
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@alun0");
+
+$aluno->insert();
+
+echo $aluno;
+
 ?>
