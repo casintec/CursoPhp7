@@ -31,13 +31,35 @@ $usuariologado->login("lev_wand", "root");
 echo $usuariologado;
 */
 
+//inserindo um novo usuário
+/*
 $aluno = new Usuario("aluno", "@@@lun0");
 
 //$aluno->setDeslogin("aluno");
 //$aluno->setDessenha("@alun0");
 
 $aluno->insert();
-
 echo $aluno;
+*/
+
+
+//Atualizando ou editando um usuario
+/*
+$novousuario = new Usuario();
+
+$novousuario->loadById(8);
+
+$novousuario->update("Lorem2", "senhamestre");
+
+echo $novousuario;
+*/
+
+$deleteusuario = new Usuario();
+
+$deleteusuario->loadById(13);
+
+$deleteusuario->delete();
+
+echo $deleteusuario;
 
 ?>
